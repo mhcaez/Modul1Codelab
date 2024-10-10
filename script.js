@@ -1,26 +1,26 @@
-function validateForm() {
-    // Get the values of the form fields
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var address = document.getElementById('address').value.trim();
-
-    // Validate that the fields are not empty
-    if (name === "") {
-        alert("Nama tidak boleh kosong.");
-        return false; // Prevent form submission
+function calculateSum() {
+    // Get the values from the input fields
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    
+    // Ensure both numbers are valid
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById('result').innerText = "Please enter valid numbers!";
+        return;
     }
     
-    if (email === "") {
-        alert("Email tidak boleh kosong.");
-        return false; // Prevent form submission
-    }
+    // Perform the addition operation
+    var result = num1 + num2;
     
-    if (address === "") {
-        alert("Alamat tidak boleh kosong.");
-        return false; // Prevent form submission
-    }
+    // Display the result
+    document.getElementById('result').innerText = "Hasil: " + result;
+}
 
-    // If everything is filled out, allow the form to submit
-    alert("Pendaftaran berhasil!");
-    return true;
+function resetForm() {
+    // Clear the input fields
+    document.getElementById('num1').value = '';
+    document.getElementById('num2').value = '';
+    
+    // Reset the result display
+    document.getElementById('result').innerText = 'Hasil: ';
 }

@@ -1,7 +1,7 @@
-/* General Body Style */
+/* Apply a modern font */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4e6d7;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,54 +9,79 @@ body {
     margin: 0;
 }
 
-/* Form Container Styling */
-.form-container {
-    background-color: #3d7b3f;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+/* Container styling */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 350px;
 }
 
-/* Form Heading */
+/* Heading styling */
 h2 {
-    color: white;
     margin-bottom: 20px;
+    color: #333;
 }
 
-/* Form Labels */
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: white;
-    text-align: left;
-}
-
-/* Input Fields */
+/* Input fields styling */
 input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-/* Button Styling */
+/* Button styling */
 button {
-    width: 100%;
-    padding: 12px;
-    background-color: #0e562c;
-    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin: 10px 5px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #28a745;
+    color: white;
     transition: background-color 0.3s ease;
 }
 
-/* Button Hover Effect */
 button:hover {
-    background-color: #083e1e;
+    background-color: #218838;
+}
+
+/* Reset button styling */
+.reset {
+    background-color: #dc3545;
+}
+
+.reset:hover {
+    background-color: #c82333;
+}
+
+/* Result text styling */
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Additional responsive styling */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
